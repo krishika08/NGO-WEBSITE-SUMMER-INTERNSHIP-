@@ -4,6 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AAS Social Welfare Society</title>
+  <style>
+  @keyframes slideFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-fade-in {
+    animation: slideFadeIn 1.5s ease-out forwards;
+  }
+</style>
+
+  <style>
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animate-fade-in {
+    animation: fade-in 1.5s ease-in-out forwards;
+  }
+</style>
+
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -42,6 +69,16 @@
     <p class="text-base md:text-lg max-w-xl">॥ ਜਗ ਰਚਨਾ ਸਭ ਝੂਠ ਹੈ ਜਾਨਿ ਲੇਹੁ ਰੇ ਮੀਤ ॥</p>
   </div>
 </div>
+
+
+<!-- Daily Quote Section -->
+<section class="bg-gradient-to-r from-white via-green-100 to-white py-10">
+  <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+    <p id="daily-quote" class="text-xl italic font-semibold text-gray-700 opacity-0 transition-opacity duration-1000"></p>
+
+    <!-- <p id="daily-quote" class="text-xl italic font-semibold text-gray-700 transition-opacity duration-1000 opacity-0"></p> -->
+  </div>
+</section>
 
         
 
@@ -254,6 +291,30 @@
           </div>
 
 </section>
+<!-- PROJECT HIGHLIGHTS -->
+<section class="bg-gradient-to-r from-[#e0f7fa] to-[#f1f8e9] py-16 px-6">
+  <h2 class="text-4xl font-extrabold text-center text-green-800 mb-10 underline hover:underline-offset-4">PROJECT HIGHLIGHTS</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+    <!-- Poster 1 -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+      <img src="POSTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR11111111111111.jpg" alt="Project Highlights Part 1" class="w-full h-auto cursor-pointer" onclick="openModal(this.src)">
+      <p class="text-center mt-4 px-4 text-lg font-semibold text-gray-700">Snapshots of Plantation Drives,Acts of Service & Recognition</p>
+    </div>
+
+    <!-- Poster 2 -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+      <img src="POSTERRRRRRRRRRRRRRRRR2.jpg" alt="Project Highlights Part 2" class="w-full h-auto cursor-pointer" onclick="openModal(this.src)">
+      <p class="text-center mt-4 px-4 text-lg font-semibold text-gray-700">Empowering Change Through Community Action</p>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
+  <span class="absolute top-4 right-6 text-white text-4xl cursor-pointer" onclick="closeModal()">&times;</span>
+  <img id="lightboxImage" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl border-4 border-white" />
+</div>
 
 
 <section class="bg-gray-100 py-9">
@@ -317,6 +378,8 @@
   </div>
 </section>
 
+
+ 
 <footer class="bg-gray-800 text-gray-200 py-10">
   <div class="container mx-auto px-4">
     <!-- Top Section: Links -->
@@ -374,5 +437,73 @@
 </footer>
 
     </main>
+<script>
+  const punjabiQuotes = [
+  "ਜਿੱਥੇ ਚਾਹ ਉੱਥੇ ਰਾਹ।",
+  "ਸੇਵਾ ਕਰਣ ਵਾਲਿਆਂ ਦੀ ਕਦੇ ਵੀ ਹਾਰ ਨਹੀਂ ਹੁੰਦੀ।",
+  "ਮਿਹਨਤ ਕਦੇ ਵੀ ਵਿਅਰਥ ਨਹੀਂ ਜਾਂਦੀ।",
+  "ਪਿਆਰ ਅਤੇ ਦਯਾ ਦੇ ਨਾਲ ਸੰਸਾਰ ਬਦਲ ਸਕਦਾ ਹੈ।",
+  "ਤੁਸੀਂ ਕਿਸੇ ਦੀ ਜ਼ਿੰਦਗੀ ਚ ਬਦਲਾਅ ਲਿਆਉਂਦੇ ਹੋ ਤਾਂ ਇਹ ਵੱਡੀ ਸੇਵਾ ਹੁੰਦੀ ਹੈ।",
+  "ਸੱਚ ਦੀ ਰਾਹੀਂ ਤੁਰਨ ਵਾਲੇ ਕਦੇ ਨਹੀਂ ਡੋਲਦੇ।",
+  "ਦਾਨ ਤੇ ਸੇਵਾ ਸਭ ਤੋਂ ਵੱਡੀ ਪੂੰਜੀ ਹੁੰਦੀ ਹੈ।",
+  "ਇੱਕ ਛੋਟਾ ਕੰਮ ਵੀ ਕਿਸੇ ਲਈ ਵੱਡੀ ਉਮੀਦ ਬਣ ਸਕਦਾ ਹੈ।",
+  "ਸੇਵਾ ਦਾ ਮਤਲਬ ਹਮਦਰਦੀ ਹੈ, ਦਿਖਾਵਾ ਨਹੀਂ।",
+  "ਵੱਡਾ ਹੋਣ ਲਈ ਵੱਡਾ ਦਿਲ ਚਾਹੀਦਾ ਹੈ।",
+  "ਸਭ ਤੋਂ ਵੱਡੀ ਪੂਜਾ ਮਨੁੱਖਤਾ ਦੀ ਸੇਵਾ ਕਰਨਾ ਹੈ।",
+  "ਭਲਾਈ ਦੇ ਰਾਹ ਤੇ ਤੁਰਨਾ ਸਭ ਤੋਂ ਵੱਡੀ ਜਿੱਤ ਹੈ।",
+  "ਆਪਣੀ ਜ਼ਿੰਦਗੀ ਦੂਜਿਆਂ ਦੀ ਜ਼ਿੰਦਗੀ ਸੁਧਾਰਨ 'ਚ ਲਗਾਓ।",
+  "ਕਦੇ ਵੀ ਕਿਸੇ ਦੀ ਹੰਸੀ ਨਾ ਉਡਾਓ, ਕਦਚਿਤ ਉਹ ਉਸਦੀ ਆਖਰੀ ਉਮੀਦ ਹੋਵੇ।",
+  "ਮਨੁੱਖਤਾ ਸਭ ਤੋਂ ਵੱਡਾ ਧਰਮ ਹੈ।",
+  "ਮਦਦ ਕਰਨਾ ਸਿਰਫ ਇਕ ਗੁਣ ਨਹੀਂ, ਇਹ ਇਕ ਜੀਵਨ ਸ਼ੈਲੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।",
+  "ਜਦੋਂ ਤੂੰ ਹੋਰਾਂ ਲਈ ਚਾਨਣ ਬਣਦਾ ਹੈਂ, ਤਦੋਂ ਹੀ ਤੇਰਾ ਜੀਵਨ ਰੌਸ਼ਨ ਹੁੰਦਾ ਹੈ।",
+  "ਹਮੇਸ਼ਾ ਉਹ ਬਣੋ ਜੋ ਦੂਜਿਆਂ ਦੇ ਦੁੱਖ ਦੂਰ ਕਰੇ।",
+  "ਸੱਚੀ ਸੇਵਾ ਉਹ ਹੈ ਜੋ ਬਿਨਾਂ ਉਮੀਦਾਂ ਦੇ ਕੀਤੀ ਜਾਵੇ।",
+  "ਦਿਲੋਂ ਦਿੱਤਾ ਦਾਨ ਹੀ ਸੱਚਾ ਦਾਨ ਹੁੰਦਾ ਹੈ।",
+  "ਸੋਚ ਪਵਿੱਤਰ ਹੋਵੇ ਤਾਂ ਰਾਹ ਸਾਫ਼ ਹੁੰਦੇ ਹਨ।",
+  "ਸੇਵਾ ਇੱਕ ਅਜਿਹਾ ਬੀਜ ਹੈ ਜੋ ਹਮੇਸ਼ਾ ਫਲ ਦਿੰਦਾ ਹੈ।",
+  "ਭਰੋਸਾ ਰੱਖੋ, ਹਰ ਭਲਾਈ ਕਿਸੇ ਨਾ ਕਿਸੇ ਰੂਪ 'ਚ ਵਾਪਸ ਆਉਂਦੀ ਹੈ।",
+  "ਜਿੱਥੇ ਦਿਲ ਤੋਂ ਸੇਵਾ ਹੁੰਦੀ ਹੈ, ਓਥੇ ਰੱਬ ਵੱਸਦਾ ਹੈ।",
+  "ਆਪਣੀ ਨੀਵਾਂ ਰੱਖੋ, ਰੱਬ ਤੁਹਾਨੂੰ ਉੱਚਾ ਕਰੇਗਾ।",
+  "ਦਿਲ ਦੀ ਸਫਾਈ ਹੀ ਸਭ ਤੋਂ ਵੱਡਾ ਇਨਸਾਨੀ ਗੁਣ ਹੈ।",
+  "ਤੁਸੀਂ ਕਿਸੇ ਨੂੰ ਖੁਸ਼ ਕਰਕੇ ਆਪਣੀ ਖੁਸ਼ੀ ਵਧਾ ਸਕਦੇ ਹੋ।",
+  "ਜਿੱਥੇ ਰੱਬ ਦੀ ਰਜ਼ਾ, ਓਥੇ ਹੀ ਚੰਗਾ ਭਵਿੱਖ।",
+  "ਰੋਟੀ ਦੀ ਵੰਡ ਨਾ ਭੁੱਲੋ, ਇਹ ਰੱਬ ਦੀ ਮਰਜ਼ੀ ਨੂੰ ਪਸੰਦ ਆਉਂਦੀ ਹੈ।",
+  "ਕਿਸੇ ਦੀ ਜ਼ਿੰਦਗੀ 'ਚ ਹੌਂਸਲਾ ਬਣੋ, ਬੋਝ ਨਹੀਂ।",
+  "ਸੇਵਾ ਦੀ ਰਾਹ 'ਤੇ ਰੁਕਾਵਟਾਂ ਆਉਣਗੀਆਂ, ਪਰ ਰੱਬ ਦਾ ਸਾਥ ਵੀ ਹੋਵੇਗਾ।",
+  "ਦਿਲੋਂ ਨਿਕਲਿਆ ਇਕ ਪਿਆਰ ਭਰਿਆ ਸ਼ਬਦ ਵੀ ਕਿਸੇ ਦਾ ਦਿਨ ਬਦਲ ਸਕਦਾ ਹੈ।",
+  "ਇਨਸਾਨ ਦੀ ਵਡਿਆਈ ਉਸਦੀ ਮਦਦਗਾਰ ਨਸਲ ਚੋਂ ਹੁੰਦੀ ਹੈ।",
+  "ਜਿਹੜਾ ਦੂਜਿਆਂ ਨੂੰ ਚਾਨਣ ਦੇਂਦਾ ਹੈ, ਉਹ ਕਦੇ ਹਨੇਰੇ 'ਚ ਨਹੀਂ ਰਹਿੰਦਾ।",
+  "ਸਾਫ ਦਿਲ ਅਤੇ ਸੱਚੇ ਕੰਮ ਕਦੇ ਨਹੀਂ ਹਾਰਦੇ।",
+  "ਤਕਦੀਰ ਉਨ੍ਹਾਂ ਦੀ ਵੀ ਬਦਲ ਜਾਂਦੀ ਹੈ ਜੋ ਦੂਜਿਆਂ ਲਈ ਦੁਆ ਕਰਦੇ ਹਨ।",
+  "ਦਿਲੋਂ ਦਿਤੀ ਮਦਦ ਹੀ ਰੱਬ ਨੂੰ ਮਨਾਉਂਦੀ ਹੈ।",
+  "ਸੇਵਾ ਇੱਕ ਅਜਿਹਾ ਰਾਹ ਹੈ ਜੋ ਸਿੱਧਾ ਰੱਬ ਤੱਕ ਜਾਂਦਾ ਹੈ।",
+  "ਦੂਜਿਆਂ ਦੀ ਜ਼ਿੰਦਗੀ ਸਵਾਰਨ ਵਾਲੇ ਲੋਕ ਕਦੇ ਨਾ ਭੁੱਲੇ ਜਾਂਦੇ।",
+  "ਚੰਗਾ ਕੰਮ ਸ਼ੁਰੂ ਕਰੋ, ਲੋਕ ਆਪਣਾ ਆਪ ਮਿਲ ਜਾਣਗੇ।",
+  "ਮਿਹਨਤ ਕਰਨ ਵਾਲਿਆਂ ਨੂੰ ਰੱਬ ਵੀ ਹੌਂਸਲਾ ਦਿੰਦਾ ਹੈ।",
+  "ਸੇਵਾ ਵਿਚ ਸੁਖ ਹੈ, ਨਾਮ ਵਿਚ ਨਹੀਂ।",
+  "ਜਦ ਤੱਕ ਹੰਝੂ ਹਨ, ਤਦ ਤੱਕ ਸੇਵਾ ਦੀ ਲੋੜ ਹੈ।",
+  "ਚੁੱਪਚਾਪ ਕੀਤਾ ਗਿਆ ਭਲਾ ਸਭ ਤੋਂ ਵੱਡਾ ਹੁੰਦਾ ਹੈ।",
+  "ਸਭ ਤੋਂ ਵੱਡੀ ਦਾਤ - ਸਮਾਂ, ਦਿਲ ਅਤੇ ਹੌਂਸਲਾ।",
+  "ਸਹੀ ਸਮੇਂ ਤੇ ਦਿੱਤੀ ਮਦਦ ਹੀ ਅਸਲ ਮਾਨਵਤਾ ਹੈ।",
+  "ਹਮੇਸ਼ਾਂ ਦਿਲ ਤੋਂ ਦਾਤ ਦੇਵੋ, ਰੱਬ ਤੁਹਾਨੂੰ ਕਦੇ ਘੱਟ ਨਹੀਂ ਪਾਏਗਾ।",
+  "ਸਭ ਤੋਂ ਵੱਡਾ ਇਨਸਾਨ ਉਹ ਜੋ ਹੋਰਾਂ ਦੀ ਖੁਸ਼ੀ 'ਚ ਆਪਣੀ ਖੁਸ਼ੀ ਲੱਭੇ।",
+  "ਮਨੁੱਖਤਾ ਦੇ ਰਾਹ ਤੇ ਤੁਰਨਾ ਹੀ ਅਸਲ ਸਾਧੂਤਾ ਹੈ।",
+  "ਸੰਸਾਰ ਨੂੰ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਪਹਿਲਾਂ ਦਿਲ ਚ ਚਾਨਣ ਲਿਆਓ।"
+];
+
+
+  function showRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * punjabiQuotes.length);
+    document.getElementById("daily-quote").innerText = "❝ " + punjabiQuotes[randomIndex] + " ❞";
+    document.getElementById("daily-quote").classList.add("opacity-100"); // make sure it shows
+  }
+
+  // Show quote on page load
+  window.addEventListener("DOMContentLoaded", showRandomQuote);
+</script>
+
+
+
+
 </body>
 </html>
