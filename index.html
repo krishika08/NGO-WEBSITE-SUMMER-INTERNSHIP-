@@ -38,23 +38,60 @@
         
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    </head>
-  <nav class=" bg-seagreen font-sans flex items-center justify-between px-6 py-2">
-  <div class="flex items-center gap-4">
-    <img src="NGO.jpg" alt="AAS logo" class="h-14">
-    <p class="text-2xl md:text-xl font-[Poppins] font-extrabold">
-      AAS SOCIAL WELFARE SOCIETY
-    </p>
+
+  <!-- Navbar -->
+<nav class="  bg-transparent backdrop-blur-xl  border-b border-white/20 shadow-md px-4 py-2 fixed top-0 w-full z-50">
+
+  <div class="flex items-center justify-between">
+    <!-- Logo and Title -->
+    <div class="flex items-center gap-3">
+      <img src="NGOOOOOOOOOOOOOOOOOOOO - Copy.png" alt="AAS logo" class="h-10 md:h-14" />
+      <p class="text-lg md:text-2xl font-[Poppins] font-extrabold">
+        AAS SOCIAL WELFARE SOCIETY
+      </p>
+    </div>
+
+    <!-- Hamburger (mobile only) -->
+    <button id="nav-toggle"
+            class="md:hidden text-black focus:outline-none focus:ring-2 focus:ring-green-200">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <div id="nav-content" class="hidden md:flex items-center gap-6 font-[Poppins]">
+      <ul class="flex space-x-6 text-sm md:text-base">
+        <li class="font-semibold hover:underline transition cursor-pointer">HOME</li>
+        <li class="font-semibold hover:underline transition cursor-pointer">ABOUT US</li>
+        <li class="font-semibold hover:underline transition cursor-pointer">CONTACT US</li>
+      </ul>
+      <button type="button"
+              class="text-black bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-200 font-semibold rounded-lg text-sm px-5 py-2 focus:outline-none">
+        DONATE
+      </button>
+    </div>
   </div>
 
-       <div class="flex items-center gap-6 font-sans">
-      <ul class=" flex font-[Poppins]  space-x-9 justify-end ml-96 ">
-        <li class="font-[Poppins]  font-semibold   hover:underline  transition-transform hover: shadow-cyan-400  duration-1000 cursor-pointer">HOME</li>
-        <li class="font-[Poppins]  font-semibold  hover:underline  transition-transform hover: shadow-cyan-400 duration-1000 cursor-pointer"> ABOUT US</li>
-        <li class="font-[Poppins]  font-semibold  hover:underline  transition-transform hover: shadow-cyan-400 duration-1000 cursor-pointer">CONTACT US</li>
-      </ul>
-      <button type="button" class="text-black  bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-200 font-semibold rounded-lg font-[Poppins] text-sm px-5 py-2 me-2 mb-2 focus:outline-none ">DONATE</button>
-      </div>
-     </nav>
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden pt-4 font-[Poppins]">
+    <ul class="flex flex-col space-y-2 text-center text-sm">
+      <li class="font-semibold hover:underline transition cursor-pointer">HOME</li>
+      <li class="font-semibold hover:underline transition cursor-pointer">ABOUT US</li>
+      <li class="font-semibold hover:underline transition cursor-pointer">CONTACT US</li>
+      <li>
+        <button type="button"
+                class="w-full mt-2 text-black bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-200 font-semibold rounded-lg px-5 py-2 focus:outline-none">
+          DONATE
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+     
+     <main>
+      <br></br>
      
      <main>
                    <div class="relative w-full h-[450px] overflow-hidden">
@@ -63,258 +100,341 @@
     Your browser does not support the video tag.
   </video>
 
-  <!-- Overlay -->
+   Overlay
   <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-white text-center bg-black/30 px-4">
     <h1 class="text-3xl md:text-5xl  font-[Poppins] font-extrabold mb-4">  ਆਸ ਸੋਸ਼ਲ ਵੈੱਲਫੇਅਰ ਸੁਸਾਇਟੀ </h1>
-    <p class="text-base md:text-lg max-w-xl">॥ ਜਗ ਰਚਨਾ ਸਭ ਝੂਠ ਹੈ ਜਾਨਿ ਲੇਹੁ ਰੇ ਮੀਤ ॥</p>
+       <p class="text-base md:text-lg max-w-xl">॥ ਜਗ ਰਚਨਾ ਸਭ ਝੂਠ ਹੈ ਜਾਨਿ ਲੇਹੁ ਰੇ ਮੀਤ ॥</p>
+      </div>
+   </div>
+          <div class="bg-gradient-to-r from-[#a8e6cf] to-[#dcedc1] py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32">
+  <p class="text-black font-[Poppins] text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center">
+    ਆਸ ਸੋਸ਼ਲ ਵੈਲਫੇਅਰ ਸੋਸਾਇਟੀ ਨੂੰ <strong>16 ਦਸੰਬਰ 2019</strong> ਨੂੰ ਅਧਿਕਾਰਿਕ ਤੌਰ 'ਤੇ ਰਜਿਸਟਰ ਕੀਤਾ ਗਿਆ ਸੀ।
+    ਇਸਦਾ ਮੁੱਖ ਦਫ਼ਤਰ ਖਾਰਾ ਕਾਲੋਨੀ, ਰਾਹੋਂ ਰੋਡ, ਸ਼ਹੀਦ ਭਗਤ ਸਿੰਘ ਨਗਰ, ਪੰਜਾਬ ਵਿੱਚ ਸਥਿਤ ਹੈ।
+    ਆਸ ਇੱਕ ਨਵੀਨ ਪਰੰਤੂ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਸੰਸਥਾ ਹੈ ਜੋ ਖੇਤਰ ਵਿੱਚ ਸਮਾਜਿਕ ਭਲਾਈ ਲਈ ਜ਼ਿੰਮੇਵਾਰੀਆਂ ਨਿਭਾ ਰਹੀ ਹੈ।
+    <br><br>
+    ਸਥਾਪਨਾ ਤੋਂ ਲੈ ਕੇ ਹੁਣ ਤੱਕ, ਸੁਸਾਇਟੀ ਨੇ ਵੱਖ-ਵੱਖ ਸਮਾਜਿਕ ਭਲਾਈ ਪਹਿਲਕਦਮੀਆਂ ਵਿੱਚ ਸਰਗਰਮੀ ਨਾਲ ਹਿੱਸਾ ਲਿਆ ਹੈ।
+    ਇਸਦੀਆਂ ਪ੍ਰਮੁੱਖ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ ਰੁੱਖ ਲਗਾਉਣ ਦੀਆਂ ਮੁਹਿੰਮਾਂ।
+    ਇਨ੍ਹਾਂ ਦੇ ਕੰਮ ਦਾ ਇੱਕ ਹੋਰ ਅਹਿਮ ਖੇਤਰ ਪਾਣੀ ਦੀ ਸੰਭਾਲ ਹੈ।
+  </p>
+</div>
+
+
+
+            
+        <div class="py-16 px-4 sm:px-6 lg:px-20 text-center bg-green-50">
+  <h2 class="text-3xl sm:text-4xl font-extrabold text-green-600 font-sans">
+    OUR IMPACT
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-12 max-w-6xl mx-auto">
+    
+    <!-- Impact Box 1 -->
+    <div>
+      <p class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-black">2</p>
+      <p class="text-green-500 font-bold text-xl sm:text-2xl">thousands+</p>
+      <p class="font-bold font-sans text-sm sm:text-base">Children and their Family</p>
+    </div>
+
+    <!-- Impact Box 2 -->
+    <div>
+      <p class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-black">470+</p>
+      <p class="text-green-500 font-bold text-xl sm:text-2xl">Villages</p>
+      <p class="font-bold font-sans text-sm sm:text-base">
+        and Slums are reached out to across the Country
+      </p>
+    </div>
+
+    <!-- Impact Box 3 -->
+    <div>
+      <p class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-black">50+</p>
+      <p class="text-green-500 font-bold text-xl sm:text-2xl">Projects</p>
+      <p class="font-bold font-sans text-sm sm:text-base">
+        Focused on education, healthcare, and Women Empowerment
+      </p>
+    </div>
+
+    <!-- Impact Box 4 -->
+    <div>
+      <p class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-black">2+</p>
+      <p class="text-green-500 font-bold text-xl sm:text-2xl">Districts</p>
+      <p class="font-bold font-sans text-sm sm:text-base">
+        are Reached including the Remotest Areas
+      </p>
+    </div>
+  </div>
+</div>
+
+            <div class="py-16 px-4 sm:px-6 lg:px-20 bg-white text-center">
+  <h2 class="text-3xl sm:text-4xl font-extrabold text-black font-sans">
+    OUR PROGRAMMES
+  </h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 max-w-6xl mx-auto">
+    
+    <!-- EDUCATION -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+      <img src="eduuuuuu.jpg" alt="Education" class="w-24 h-24 object-cover rounded shadow-md" />
+      <div class="text-left">
+        <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 underline mb-1">EDUCATION</h3>
+        <p class="text-base sm:text-lg text-black font-sans">
+          Education, Nutrition, and Holistic Development of Children
+        </p>
+      </div>
+    </div>
+
+    <!-- HEALTH -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+      <img src="healthccare...png" alt="Health" class="w-24 h-24 object-cover rounded shadow-md" />
+      <div class="text-left">
+        <h3 class="text-2xl sm:text-3xl font-bold text-green-700 underline mb-1">HEALTH</h3>
+        <p class="text-base sm:text-lg text-black font-sans">
+          Taking healthcare services to doorsteps of hard-to-reach communities
+        </p>
+      </div>
+    </div>
+
+    <!-- WOMEN EMPOWERMENT -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+      <img src="wooooo.webp" alt="Women Empowerment" class="w-24 h-24 object-cover rounded shadow-md" />
+      <div class="text-left">
+        <h3 class="text-2xl sm:text-3xl font-bold text-pink-500 underline mb-1">WOMEN EMPOWERMENT</h3>
+        <p class="text-base sm:text-lg text-black font-sans">
+          Empowering adolescent girls & women through community engagement
+        </p>
+      </div>
+    </div>
+
+    <!-- LIVELIHOOD -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+      <img src="livlihood.png" alt="Livelihood" class="w-24 h-24 object-cover rounded shadow-md" />
+      <div class="text-left">
+        <h3 class="text-2xl sm:text-3xl font-bold text-teal-800 underline mb-1">LIVELIHOOD</h3>
+        <p class="text-base sm:text-lg text-black font-sans">
+          Skill training and placement support for underprivileged youth
+        </p>
+      </div>
+    </div>
+
   </div>
 </div>
 
 
-<!-- Daily Quote Section -->
-<section class="bg-gradient-to-r from-white via-green-100 to-white py-10">
-  <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
-    <p id="daily-quote" class="text-xl italic font-semibold text-gray-700 opacity-0 transition-opacity duration-1000"></p>
+            
+            
+            <section class="bg-gradient-to-br from-[#f0fff4] via-[#d3f9d8] to-[#edf6f9] py-12 px-4 sm:px-8 lg:px-16">
+  <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-black mb-10 hover:underline">
+    SUPPORT A CAUSE
+  </h2>
 
-    <!-- <p id="daily-quote" class="text-xl italic font-semibold text-gray-700 transition-opacity duration-1000 opacity-0"></p> -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    
+    <!-- Card 1 -->
+    <div class="group flex flex-col">
+      <div class="relative h-72 sm:h-80 md:h-96 w-full rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+        <img src="empowerherwings.jpg" alt="Empower Her Wings" class="object-cover w-full h-full" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+        <div class="absolute bottom-4 left-4 text-white text-xl sm:text-2xl md:text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0">
+          Empower Her Wings
+        </div>
+      </div>
+      <p class="mt-4 text-sm sm:text-base text-gray-700 font-bold">
+        AAS initiative ‘Empower Her Wings’ enables and empowers girl children with quality education and good health.
+      </p>
+      <a href="#" class="mt-2 text-green-600 font-medium hover:underline">Know more ></a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="group flex flex-col">
+      <div class="relative h-72 sm:h-80 md:h-96 w-full rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+        <img src="umeedonkakal.webp" alt="Umeedon Ka Kal" class="object-cover w-full h-full" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+        <div class="absolute bottom-4 left-4 text-white text-xl sm:text-2xl md:text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0">
+          Umeedon Ka Kal
+        </div>
+      </div>
+      <p class="mt-4 text-sm sm:text-base text-gray-700 font-bold">
+        Our campaign ‘Umeedon Ka Kal’ focuses on upskilling youth to provide secure livelihood.
+      </p>
+      <a href="#" class="mt-2 text-green-600 font-medium hover:underline">Know more ></a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group flex flex-col">
+      <div class="relative h-72 sm:h-80 md:h-96 w-full rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+        <img src="heath is hope.jpg" alt="Health Is Hope" class="object-cover w-full h-full" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+        <div class="absolute bottom-4 left-4 text-white text-xl sm:text-2xl md:text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0">
+          Health Is Hope
+        </div>
+      </div>
+      <p class="mt-4 text-sm sm:text-base text-gray-700 font-bold">
+        Realizing the urgency for accessible and quality healthcare, delivers medical support directly to underserved communities.
+      </p>
+      <a href="#" class="mt-2 text-green-600 font-medium hover:underline">Know more ></a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="group flex flex-col">
+      <div class="relative h-72 sm:h-80 md:h-96 w-full rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+        <img src="gyaankaghar.jpg" alt="Gyaan Har Ghar" class="object-cover w-full h-full" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+        <div class="absolute bottom-4 left-4 text-white text-xl sm:text-2xl md:text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0">
+          Gyaan Har Ghar
+        </div>
+      </div>
+      <p class="mt-4 text-sm sm:text-base text-gray-700 font-bold">
+        Through ‘Gyaan Har Ghar’, AAS supports children from vulnerable backgrounds to continue their education and rebuild their academic journey.
+      </p>
+      <a href="#" class="mt-2 text-green-600 font-medium hover:underline">Know more ></a>
+    </div>
+
   </div>
 </section>
 
-        
-
-      </div>
-          <div class="bg-gradient-to-r from-[#a8e6cf] to-[#dcedc1] h-96 py-20">
-          <p class="text-black font-bold font-[Poppins] font-stretch-150% text-center  mb-96 mx-40 text-xl">
-            ਆਸ ਸੋਸ਼ਲ ਵੈਲਫੇਅਰ ਸੋਸਾਇਟੀ ਨੂੰ 16 ਦਸੰਬਰ 2019 ਨੂੰ ਅਧਿਕਾਰਿਕ ਤੌਰ 'ਤੇ ਰਜਿਸਟਰ ਕੀਤਾ ਗਿਆ ਸੀ।
-             ਇਸਦਾ ਮੁੱਖ ਦਫ਼ਤਰ ਖਾਰਾ ਕਾਲੋਨੀ, ਰਾਹੋਂ ਰੋਡ, ਸ਼ਹੀਦ ਭਗਤ ਸਿੰਘ ਨਗਰ, ਪੰਜਾਬ ਵਿੱਚ ਸਥਿਤ ਹੈ। 
-             ਆਸ  ਇੱਕ ਨਵੀਨ ਪਰੰਤੂ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਸੰਸਥਾ ਹੈ ਜੋ ਖੇਤਰ ਵਿੱਚ ਸਮਾਜਿਕ ਭਲਾਈ ਲਈ ਜ਼ਿੰਮੇਵਾਰੀਆਂ ਨਿਭਾ ਰਹੀ ਹੈ।
-            <br></br>
-            ਸਥਾਪਨਾ ਤੋਂ ਲੈ ਕੇ ਹੁਣ ਤੱਕ, ਸੁਸਾਇਟੀ ਨੇ ਵੱਖ-ਵੱਖ ਸਮਾਜਿਕ ਭਲਾਈ ਪਹਿਲਕਦਮੀਆਂ ਵਿੱਚ ਸਰਗਰਮੀ ਨਾਲ ਹਿੱਸਾ ਲਿਆ ਹੈ।
-             ਇਸਦੀਆਂ ਪ੍ਰਮੁੱਖ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ ਰੁੱਖ ਲਗਾਉਣ ਦੀਆਂ ਮੁਹਿੰਮਾਂ।
-             ਇਨ੍ਹਾਂ ਦੇ ਕੰਮ ਦਾ ਇੱਕ ਹੋਰ ਅਹਿਮ ਖੇਤਰ ਪਾਣੀ ਦੀ ਸੰਭਾਲ ਹੈ।
-          </p>
-
-          </div>
-
-
-            
-        <div class=" py-20 h-96 text-center bg-green-50">
-            <h2 class=" text-4xl  text-center font-sans font-extrabold text-green-600 "> OUR IMPACT </h2>
-            
-            <div class = "grid grid-cols-4 gap-10 mt-12 px-6 max-w-6xl mx-auto">
-
-            <div>
-              <p class="text-7xl font-extrabold "> 2</p>
-              <p class=" font-bold text-3xl text-green-500"> thousands+ </p>
-              <p class=" font-bold font-sans"> Children and their Family</p>
-            </div>
-             
-            <div>
-              <p class="text-7xl font-extrabold text-black"> 470+</p>
-              <p class="text-green-500 font-bold text-2xl "> Villages</p>
-              <p class=" font-bold font-sans"> and Slums are reached out to across the Country</p>
-            </div>
-            
-            
-                         <div>
-                          <p class="text-7xl font-extrabold text-black"> 50+</p>
-              <p class="text-green-500 font-bold text-2xl ">Projects </p>
-              <p class=" font-bold font-sans"> Focused on education, healthcare, and Women Empowerment</p>
-              </div>
-            
-              <div>
-              <p class="text-7xl font-extrabold text-black"> 2+</p>
-              <p class="text-green-500 font-bold text-2xl "> districts </p>
-              <p class=" font-bold font-sans"> are Reached including the Remotest Areas</p>
-              </div>
-              </div>
-              </div>
-            <div>
-              <div class=" py-20 h-96 text-center bg-">
-              <h2 class=" text-4xl  text-center font-sans font-extrabold text-black "> OUR PROGRAMMES </h2>
-                        
-              <div class = "grid grid-cols-1 lg:grid-cols-2 gap-10 mt-12 px-6 max-w-6xl mx-auto">
-            
-
-
-
-              <div>           
-              <div class="flex items-center space-x-4 h-30">
-              <img src="eduuuuuu.jpg" alt="Education" class="h-30">
-              <p class="text-blue-900 font-bold text-3xl underline">EDUCATION</p>
-              </div>
-              <p class="text-black  font-sans -mt-4 ml-32 mx-30 text-xl"> Education,Nutrition and Holistic Development of Children</p>
-              </div>
-
-
-
-
-
-              <div>           
-              <div class="flex items-center space-x-4 h-30">
-              <img src="healthccare...png" alt="Heath" class="h-30">
-              <p class="bg-white text-green-700 font-bold text-3xl underline ">HEALTH</p>
-              </div>
-              <p class="text-black  font-sans  -mt-4 ml-32 mx-30 text-xl"> Taking healthcare services to doorsteps of hard to reach communities</p>
-              </div>
-              <div>
-              <div Class="flex items-center space-x-4 h-30">
-              <img src="wooooo.webp" alt="WOMEN"  class="h-20">
-              <p class="bg-white text-pink-500 font-bold text-3xl underline  "> WOMEN EMPOWERMENT</p>
-              </div>
-              <p class="text-black font-sans -mt-4 ml-32 mx-30 text-xl"> Empowering adolescent girls & women through community engagement </p>
-              </div>
-              <div>
-              <div Class="flex items-center space-x-4 h-30">
-              <img src="livlihood.png" alt="livelihood" class="h-30">
-              <p class="bg-white text-teal-800 font-bold text-3xl underline "> LIVELIHOOD </p>
-              </div>
-              <p class="text-black font-sans -mt-4 ml-32 mx-30 text-xl">Skill training and placement support for underprivileged youth</p>
-            </div>
-              
-              <br>
-              </br>
-              </div>  
-
-            
-            
-            <section class="bg-gradient-to-br from-[#f0fff4] via-[#d3f9d8] to-[#edf6f9]
- py-12 px-4 sm:px-8 lg:px-16 ">
-            <h2 class="text-3xl font-extrabold text-center text-black mb-10 hover:underline">SUPPORT A CAUSE</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-
-                                                <!-- CARD TEMPLATE -->
-            <div class=" group flex flex-col">
-            <div class=" group relative h-96 hover:scale-105  transition-transform duration-300 w-full rounded-xl overflow-hidden shadow-md ">
-              <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50"></div>
-            <img src="empowerherwings.jpg" alt="She Can Fly" class="object-cover w-full h-full" />
-            <div class="absolute top-74 font-sans left-2.5 text-white text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0">Empower Her Wings</div>
-            </div>
-             <p class="mt-4 text-sm text-gray-700 font-bold">
-                 AAS initiative ‘Empower Her Wings’ enables and empowers girl children with quality education and good health.
-            </p>
-            <a href="#" class="mt-2 text-green-600 font-medium hover:underline">know more ></a>
-            </div>
-
-            <div class="flex flex-col">
-            <div class=" group relative h-96 w-full  hover:scale-105 transition-transform duration-300  rounded-xl overflow-hidden shadow-md">
-              <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50"></div>
-            <img src="umeedonkakal.webp" alt="Tayyari Kal Ki" class="object-cover w-full h-full" />
-            <div class="absolute top-80  font-sans  left-6 text-white text-3xl font-bold transition-opacity duration-300 group-hover:opacity-0">Umeedon Ka Kal</div>
-            </div>
-            <p class="mt-4 text-sm text-gray-700 font-bold">
-                Our campaign ‘- Umeedon Ka Kal’ focuses on upskilling youth to provide secure livelihood.
-            </p>
-            <a href="#" class="mt-2 text-green-600 font-medium hover:underline">know more ></a>
-            </div>
-
-            <div class="flex flex-col">
-            <div class=" group relative h-96 w-full  hover:scale-105  transition-transform duration-300  rounded-xl overflow-hidden shadow-md">
-              <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50"></div>
-            <img src="heath is hope.jpg" alt="Health Cannot Wait" class="object-cover w-full h-full" />
-            <div class="absolute top-80  font-sans  left-6 text-white text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0">HEALTH IS HOPE</div>
-            </div>
-            <p class="mt-4 text-sm text-gray-700 font-bold">
-            Realizing the urgency for accessible and quality healthcare,delivers medical support directly to underserved
-            </p>
-            <a href="#" class="mt-2 text-green-600 font-medium hover:underline">know more ></a>
-            </div>
-
-           <div class="flex flex-col">
-           <div class="group relative h-96 w-full rounded-xl hover:scale-105 transition-transform duration-300  overflow-hidden shadow-md">
-            <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50"></div>
-           <img src="gyaankaghar.jpg" alt="Shiksha Na Ruke"  class=" object-cover w-full h-full" />
-           <div class="absolute top-80 font-sans  left-6 text-white text-3xl font-bold transition-opacity duration-300 group-hover:opacity-0 ">GYAAN HAR GHAR</div>
-           </div>
-           <p class="mt-4 text-sm text-gray-700 font-bold">
-           Through ‘Gyaan Har Ghar’, AAS supports children from vulnerable backgrounds to continue their education and rebuild their academic journey.
-           </p>
-           <a href="#" class="mt-2 text-green-600 font-medium hover:underline">know more ></a>
-           </div>
-
-          </div>
-</section>
 
 <!--------------------------------------------- OUR WORK SECTION --------------------------------------------------------------->
 
 
-        <section class=" bg-white py-12 px-4 sm:px-8 lg:px-16 ">
-            <h2 class="text-5xl font-extrabold  text-center text-black mb-10 hover:underline"> OUR WORK </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <section class="bg-white py-12 px-4 sm:px-8 lg:px-16">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-black mb-10 hover:underline">
+    OUR WORK
+  </h2>
 
-                                                <!-- CARD TEMPLATE 1 -->
-            <div class=" group flex flex-col">
-            <div class=" group relative h-96 hover:scale-105  hover:shadow-black hover:shadow-md transition-transform duration-300 w-full rounded-xl overflow-hidden shadow-md ">
-            <img src="POOR_EDUCATION.png"  class="object-cover max-w-full h-56 " />
-            <div class="absolute top-64 font-stretch-extra-expanded left-2 text-green-800 text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0 underline">EDUCTION FOR THE POOR</div>
-            
-             <p class="mt-4 text-lg text-gray-700 font-sans font-extrabold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                 AAS Social Welfare Society is committed to providing quality education to underprivileged children, helping them build a brighter and more empowered future.
-            </p>
-          </div>
-            </div>
-                    
-            <div class="flex flex-col">
-           <div class=" group relative h-96 hover:scale-105  hover:shadow-black hover:shadow-md transition-transform duration-300 w-full rounded-xl overflow-hidden shadow-md ">
-            <img src="blood_camp - Copy.webp"  class="object-cover max-w-full h-56 " />
-            <div class="absolute top-64 font-stretch-extra-expanded left-2 text-green-800 text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0 underline">BLOOD DONATION CAMP</div>
-            
-             <p class="mt-4 text-lg text-gray-700 font-sans font-extrabold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                AAS Social Welfare Society organized a blood donation camp to encourage voluntary blood donation and help save lives
-            </p>
-          </div>
-          </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
 
-            <div class="flex flex-col">
-           <div class=" group relative h-96 hover:scale-105  hover:shadow-black hover:shadow-md transition-transform duration-300 w-full rounded-xl overflow-hidden shadow-md ">
-            <img src="water_supply.png"  class="object-cover w-full h-56 " />
-            <div class="absolute top-64 font-stretch-extra-expanded left-2 text-green-800 text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0 underline">WATER DISTRIBUTION</div>
-            
-            
-             <p class="mt-4 text-lg text-gray-700 font-sans font-extrabold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                 AAS Social Welfare Society conducted a water distribution drive to provide clean drinking water to underprivileged communities
-            </p>
-          </div>
-            </div>
+    <!-- Card Template Start -->
+    <div class="group relative bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden transition-shadow duration-300">
+      <!-- IMAGE -->
+      <img src="POOR_EDUCATION.png" alt="Education" class="w-full h-60 object-cover" />
 
-           <div class="flex flex-col">
-        <div class=" group relative h-96 hover:scale-105  hover:shadow-black hover:shadow-md transition-transform duration-300 w-full rounded-xl overflow-hidden shadow-md ">
-            <img src="ambulance.png" class="object-cover max-w-full h-56 " />
-            <div class="absolute top-64 font-stretch-extra-expanded left-2 text-green-800 text-3xl font-extrabold transition-opacity duration-300 group-hover:opacity-0 underline ">AMBULANCE SERVICE</div>
-            
-             <p class="mt-4 text-lg text-gray-700 font-sans font-extrabold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              AAS Social Welfare Society provides free ambulance services to support patients in medical emergencies
-            </p>
-          </div>
-           </div>
+      <!-- Desktop Title (on image, hidden on hover) -->
+      <div class="absolute bottom-4 left-4 right-4 text-green-800 text-xl sm:text-2xl font-extrabold underline hidden sm:block group-hover:opacity-0 transition-opacity duration-300">
+        EDUCATION FOR THE POOR
+      </div>
 
-          </div>
+      <!-- Mobile Title (always visible) -->
+      <h3 class="text-green-800 text-lg font-extrabold underline p-4 block sm:hidden">
+        EDUCATION FOR THE POOR
+      </h3>
 
+      <!-- Description (always visible on mobile, hover-visible on desktop) -->
+      <p class="text-sm text-gray-700 font-sans font-medium px-4 pb-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
+        AAS Social Welfare Society is committed to providing quality education to underprivileged children, helping them build a brighter and more empowered future.
+      </p>
+    </div>
+    <!-- Card Template End -->
+
+    <!-- Repeat for other cards -->
+
+    <!-- Card 2 -->
+    <div class="group relative bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden transition-shadow duration-300">
+      <img src="blood_camp - Copy.webp" alt="Blood Camp" class="w-full h-60 object-cover" />
+      <div class="absolute bottom-4 left-4 right-4 text-green-800 text-xl sm:text-2xl font-extrabold underline hidden sm:block group-hover:opacity-0 transition-opacity duration-300">
+        BLOOD DONATION CAMP
+      </div>
+      <h3 class="text-green-800 text-lg font-extrabold underline p-4 block sm:hidden">
+        BLOOD DONATION CAMP
+      </h3>
+      <p class="text-sm text-gray-700 font-sans font-medium px-4 pb-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
+        AAS Social Welfare Society organized a blood donation camp to encourage voluntary blood donation and help save lives.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group relative bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden transition-shadow duration-300">
+      <img src="water_supply.png" alt="Water Distribution" class="w-full h-60 object-cover" />
+      <div class="absolute bottom-4 left-4 right-4 text-green-800 text-xl sm:text-2xl font-extrabold underline hidden sm:block group-hover:opacity-0 transition-opacity duration-300">
+        WATER DISTRIBUTION
+      </div>
+      <h3 class="text-green-800 text-lg font-extrabold underline p-4 block sm:hidden">
+        WATER DISTRIBUTION
+      </h3>
+      <p class="text-sm text-gray-700 font-sans font-medium px-4 pb-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
+        AAS Social Welfare Society conducted a water distribution drive to provide clean drinking water to underprivileged communities.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="group relative bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden transition-shadow duration-300">
+      <img src="ambulance.png" alt="Ambulance" class="w-full h-60 object-cover" />
+      <div class="absolute bottom-4 left-4 right-4 text-green-800 text-xl sm:text-2xl font-extrabold underline hidden sm:block group-hover:opacity-0 transition-opacity duration-300">
+        AMBULANCE SERVICE
+      </div>
+      <h3 class="text-green-800 text-lg font-extrabold underline p-4 block sm:hidden">
+        AMBULANCE SERVICE
+      </h3>
+      <p class="text-sm text-gray-700 font-sans font-medium px-4 pb-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
+        AAS Social Welfare Society provides free ambulance services to support patients in medical emergencies.
+      </p>
+    </div>
+
+  </div>
 </section>
+
+
+
+
+
 <!-- PROJECT HIGHLIGHTS -->
-<section class="bg-gradient-to-r from-[#e0f7fa] to-[#f1f8e9] py-16 px-6">
-  <h2 class="text-4xl font-extrabold text-center text-green-800 mb-10 underline hover:underline-offset-4">PROJECT HIGHLIGHTS</h2>
+
+
+<section class="bg-gradient-to-r from-[#e0f7fa] to-[#f1f8e9] py-16 px-4 sm:px-6 lg:px-12">
+  <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-green-800 mb-10 underline hover:underline-offset-4">
+    PROJECT HIGHLIGHTS
+  </h2>
   
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+    
     <!-- Poster 1 -->
     <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
-      <img src="POSTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR11111111111111.jpg" alt="Project Highlights Part 1" class="w-full h-auto cursor-pointer" onclick="openModal(this.src)">
-      <p class="text-center mt-4 px-4 text-lg font-semibold text-gray-700">Snapshots of Plantation Drives,Acts of Service & Recognition</p>
+      <img 
+        src="POSTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR11111111111111.jpg" 
+        alt="Project Highlights Part 1"
+        class="w-full h-auto cursor-pointer object-cover"
+        onclick="openModal(this.src)" />
+      <p class="text-center mt-4 px-4 text-base sm:text-lg font-semibold text-gray-700">
+        Snapshots of Plantation Drives, Acts of Service & Recognition
+      </p>
     </div>
 
     <!-- Poster 2 -->
     <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
-      <img src="POSTERRRRRRRRRRRRRRRRR2.jpg" alt="Project Highlights Part 2" class="w-full h-auto cursor-pointer" onclick="openModal(this.src)">
-      <p class="text-center mt-4 px-4 text-lg font-semibold text-gray-700">Empowering Change Through Community Action</p>
+      <img 
+        src="POSTERRRRRRRRRRRRRRRRR2.jpg" 
+        alt="Project Highlights Part 2"
+        class="w-full h-auto cursor-pointer object-cover"
+        onclick="openModal(this.src)" />
+      <p class="text-center mt-4 px-4 text-base sm:text-lg font-semibold text-gray-700">
+        Empowering Change Through Community Action
+      </p>
     </div>
+
   </div>
 </section>
 
 <!-- Lightbox Modal -->
-<div id="lightboxModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
-  <span class="absolute top-4 right-6 text-white text-4xl cursor-pointer" onclick="closeModal()">&times;</span>
-  <img id="lightboxImage" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl border-4 border-white" />
+<div id="lightboxModal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+  <span class="absolute top-4 right-6 text-white text-4xl font-bold cursor-pointer" onclick="closeModal()">&times;</span>
+  <img id="lightboxImage" src="" class="max-w-[95vw] max-h-[90vh] rounded-lg shadow-2xl border-4 border-white object-contain" />
 </div>
+
+<!-- Lightbox Script -->
+<script>
+  function openModal(src) {
+    document.getElementById('lightboxImage').src = src;
+    document.getElementById('lightboxModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
+  }
+
+  function closeModal() {
+    document.getElementById('lightboxModal').classList.add('hidden');
+    document.getElementById('lightboxImage').src = '';
+    document.body.style.overflow = 'auto';
+  }
+</script>
+
+
+
 
 
 <section class="bg-gray-100 py-9">
@@ -550,6 +670,14 @@
 
   // Show quote on page load
   window.addEventListener("DOMContentLoaded", showRandomQuote);
+
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+  
 </script>
 
 
